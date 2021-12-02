@@ -17,7 +17,7 @@ def test_guitarist_str():
     assert actual == expected
 
 
-@pytest.mark.skip("todo")
+# @pytest.mark.skip("todo")
 def test_guitarist_repr():
     joan = Guitarist("Joan Jett")
     actual = repr(joan)
