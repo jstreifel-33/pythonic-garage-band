@@ -8,7 +8,7 @@ class Musician:
     pass
 
 
-class Guitarist:
+class Guitarist(Musician):
     def __init__(self, name):
         self.name = name
 
@@ -24,7 +24,7 @@ class Guitarist:
     def play_solo(self):
         return "face melting guitar solo"
 
-class Bassist:
+class Bassist(Musician):
     def __init__(self, name):
         self.name = name
 
@@ -41,7 +41,7 @@ class Bassist:
         return "bom bom buh bom"
 
 
-class Drummer:
+class Drummer(Musician):
     def __init__(self, name):
         self.name = name
 
