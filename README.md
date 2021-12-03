@@ -8,4 +8,4 @@ App is not deployed to cloud. To use script feel free to fork or clone this repo
 
 ## Submission
 
-PR for submission: [getting-started #1](htpp.cats)
+PR for submission: [getting-started #1](https://github.com/jstreifel-33/pythonic-garage-band/pull/1)
