@@ -19,15 +19,15 @@ class Band:
 
 
 class Musician:
-    pass
+    def __str__(self):
+        return f"My name is {self.name} and I play {self.instrument}"
 
 
 class Guitarist(Musician):
+    instrument = "guitar"
+
     def __init__(self, name):
         self.name = name
-
-    def __str__(self):
-        return f"My name is {self.name} and I play guitar"
 
     def __repr__(self):
         return f"Guitarist instance. Name = {self.name}"
@@ -39,11 +39,10 @@ class Guitarist(Musician):
         return "face melting guitar solo"
 
 class Bassist(Musician):
+    instrument = "bass"
+
     def __init__(self, name):
         self.name = name
-
-    def __str__(self):
-        return f"My name is {self.name} and I play bass"
 
     def __repr__(self):
         return f"Bassist instance. Name = {self.name}"
@@ -56,11 +55,10 @@ class Bassist(Musician):
 
 
 class Drummer(Musician):
+    instrument = "drums"
+
     def __init__(self, name):
         self.name = name
-
-    def __str__(self):
-        return f"My name is {self.name} and I play drums"
 
     def __repr__(self):
         return f"Drummer instance. Name = {self.name}"
