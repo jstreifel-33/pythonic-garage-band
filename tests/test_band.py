@@ -71,14 +71,14 @@ def test_guitarist():
     assert jimi.get_instrument() == "guitar"
 
 
-@pytest.mark.skip("todo")
+# @pytest.mark.skip("todo")
 def test_bassist():
     flea = Bassist("Flea")
     assert flea.name == "Flea"
     assert flea.get_instrument() == "bass"
 
 
-@pytest.mark.skip("todo")
+# @pytest.mark.skip("todo")
 def test_drummer():
     ginger = Drummer("Ginger Baker")
     assert ginger.name == "Ginger Baker"
