@@ -3,6 +3,13 @@ class Band:
         self.name = name
         self.members = members
 
+    def play_solos(self):
+        solos = list(range(len(self.members)))
+        for idx, member in enumerate(self.members):
+            solos[idx] = member.play_solo()
+        
+        return solos
+
 
 class Musician:
     pass
