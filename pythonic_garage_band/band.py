@@ -19,6 +19,9 @@ class Band:
 
 
 class Musician:
+    def __init__(self, name):
+        self.name = name
+
     def __str__(self):
         return f"My name is {self.name} and I play {self.instrument}"
 
@@ -28,31 +31,22 @@ class Musician:
     def get_instrument(self):
         return self.instrument
 
+    def play_solo(self):
+        return self.solo
+
 
 class Guitarist(Musician):
     instrument = "guitar"
 
-    def __init__(self, name):
-        self.name = name
-
-    def play_solo(self):
-        return "face melting guitar solo"
+    solo = "face melting guitar solo"
 
 class Bassist(Musician):
     instrument = "bass"
 
-    def __init__(self, name):
-        self.name = name
-
-    def play_solo(self):
-        return "bom bom buh bom"
+    solo = "bom bom buh bom"
 
 
 class Drummer(Musician):
     instrument = "drums"
 
-    def __init__(self, name):
-        self.name = name
-
-    def play_solo(self):
-        return "rattle boom crash"
+    solo = "rattle boom crash"
