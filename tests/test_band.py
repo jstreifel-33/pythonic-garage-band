@@ -139,7 +139,7 @@ def test_class_tracks_instances():
     assert Band.instances[0] == the_nobodies
 
 
-@pytest.mark.skip("todo")
+# @pytest.mark.skip("todo")
 def test_to_list():
     assert Band.to_list() == []
     the_nobodies = Band("The Nobodies", [])
