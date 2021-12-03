@@ -1,5 +1,7 @@
 class Band:
-    pass
+    def __init__(self, name, members):
+        self.name = name
+        self.members = members
 
 
 class Musician:
@@ -15,6 +17,9 @@ class Guitarist:
 
     def __repr__(self):
         return f"Guitarist instance. Name = {self.name}"
+
+    def get_instrument(self):
+        return 'guitar'
 
 class Bassist:
     def __init__(self, name):

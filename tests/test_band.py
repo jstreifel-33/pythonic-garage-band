@@ -57,14 +57,14 @@ def test_bassist_repr():
     assert actual == expected
 
 
-@pytest.mark.skip("todo")
+# @pytest.mark.skip("todo")
 def test_band_name():
     nirvana = Band("Nirvana", [])
 
     assert nirvana.name == "Nirvana"
 
 
-@pytest.mark.skip("todo")
+# @pytest.mark.skip("todo")
 def test_guitarist():
     jimi = Guitarist("Jimi Hendrix")
     assert jimi.name == "Jimi Hendrix"
